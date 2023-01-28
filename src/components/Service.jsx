@@ -1,14 +1,9 @@
 import React from 'react';
 import styles from "../style";
-import { securityconnection,
-  scaletool,
-  support,
-  timer,
-  documents,
-  protection,} from "../assets"
+import { timer, documents,} from "../assets"
 
 const Service = () => (
-  <div className={`mx-auto py-16 text-white px-20`}>
+  <div className={`mx-auto py-16 text-white px-20`} id='service'>
     <div className= {`mx-auto text-center`}>
       <p className={`text-white ${styles.paragraph} bg-secondary inline text-center mb-4 px-3 py-2 rounded-[30px]`}>
         Our awesome services
@@ -20,7 +15,7 @@ const Service = () => (
     </div>
     <div className='flex gap-10 justify-center items-center'>
       <div className='services'>
-      <img src={securityconnection } alt='secure' className='w-10 h-10 my-5' />
+      <img src={documents } alt='secure' className='w-10 h-10 my-5' />
         <h3 className={`${styles.heading4} text-center` } >
           Faster docs. Faster deals
         </h3>
@@ -30,7 +25,7 @@ const Service = () => (
       </div>
 
       <div className='services'>
-      <img src={scaletool} alt='secure' className='w-10 h-10 my-5' />
+      <img src={timer} alt='secure' className='w-10 h-10 my-5' />
         <h3 className={`${styles.heading4} text-center` } >
           Faster docs. Faster deals
         </h3>
@@ -40,7 +35,7 @@ const Service = () => (
       </div>
 
       <div className='services'>
-      <img src={support} alt='secure' className='w-10 h-10 my-5'/>
+      <img src={documents} alt='secure' className='w-10 h-10 my-5'/>
         <h3 className={`${styles.heading4} text-center`} >
           Faster docs. Faster deals
         </h3>
@@ -72,7 +67,7 @@ const Service = () => (
       </div>
 
       <div className='services'>
-      <img src={protection} className='w-10 h-10 my-5' alt='secure' />
+      <img src={timer} className='w-10 h-10 my-5' alt='secure' />
         <h3 className={`${styles.heading4} text-center` }>
           Faster docs. Faster deals
         </h3>

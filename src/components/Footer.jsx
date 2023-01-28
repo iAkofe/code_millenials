@@ -1,66 +1,64 @@
 import React from 'react';
-import {
-  FaDribbbleSquare,
-  FaFacebookSquare,
-  FaGithubSquare,
-  FaInstagram,
-  FaTwitterSquare,
-} from 'react-icons/fa';
+import {logo, send } from "../assets";
 
-const Footer = () => {
-  return (
-    <div className='max-w-[1240px] mx-auto py-16 px-4 grid lg:grid-cols-3 gap-8 text-gray-300'>
-      <div>
-        <h1 className='w-full text-3xl font-bold text-[#fff]'>CodeCube</h1>
-        <p className='py-4'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id odit ullam iste repellat consequatur libero reiciendis, blanditiis accusantium.</p>
-        <div className='flex justify-between md:w-[75%] my-6'>
-            <FaFacebookSquare size={30} />
-            <FaInstagram size={30} />
-            <FaTwitterSquare size={30} />
-            <FaGithubSquare size={30} />
-            <FaDribbbleSquare size={30} />
+import {
+    FaFacebook,
+    FaGithub,
+    FaInstagram,
+    FaTwitter,
+    FaTwitch,
+} from 'react-icons/fa'
+
+const Footer = () => (
+    <div className='w-full mt-24 text-white py-y px-2'>
+    <div className='max-w-[1240px] mx-auto gap-10 grid grid-cols-2 md:grid-cols-6 border-b-2 border-white py-8'>
+      <di className='col-span-2 pt-8 md:pt-2'> 
+      <img src={logo} alt="codecube" className="w-[129px] h-[50px]" />
+      <p className='font-[14px] text-white mt-3 text-left'>
+        Code cube has you covered for all your web design and development jobs. We take you from ideation to creation. You can trust in us!
+        </p>
+      </di>
+        <div>
+            <h6 className='font-bold uppercase pt-2'>Services</h6>
+            <ul>
+                <li className='py-1'>UI/UX Design</li>
+                <li className='py-1'>Branding</li>
+                <li className='py-1'>Web Design</li>
+                <li className='py-1'>Web/App Development</li>
+                <li className='py-1'>Cloud</li>
+            </ul>
         </div>
-      </div>
-      <div className='lg:col-span-2 flex justify-between mt-6'>
-    <div>
-        <h6 className='font-medium text-gray-400'>Solutions</h6>
-        <ul>
-            <li className='py-2 text-sm'>Analytics</li>
-            <li className='py-2 text-sm'>Marketing</li>
-            <li className='py-2 text-sm'>Commerce</li>
-            <li className='py-2 text-sm'>Insights</li>
-        </ul>
+        <div>
+            <h6 className='font-bold uppercase pt-2'>Links</h6>
+            <ul>
+                <li className='py-1'>Pricing</li>
+                <li className='py-1'>About</li>
+                <li className='py-1'>Blog</li>
+                <li className='py-1'>Partners</li>
+                <li className='py-1'>Privacy</li>
+            </ul>
+        </div>
+        <div className='col-span-2 pt-8 md:pt-2'>
+            <p className='font-bold uppercase'>Subscribe to our newsletter</p>
+            <p className='py-4'>The latest news, articles, and resources, sent to your inbox weekly.</p>
+            <form className='flex flex-col sm:flex-row'>
+                <input className='w-full p-2 mb-4' type="email" placeholder='Enter email..'/>
+                <button className='text-white px-4 py-2 mb-4 bg-secondary'><img className='h-5 w-5' src={send} alt='send'/></button>
+            </form>
+        </div>
     </div>
-    <div>
-        <h6 className='font-medium text-gray-400'>Support</h6>
-        <ul>
-            <li className='py-2 text-sm'>Pricing</li>
-            <li className='py-2 text-sm'>Documentation</li>
-            <li className='py-2 text-sm'>Guides</li>
-            <li className='py-2 text-sm'>API Status</li>
-        </ul>
+
+    <div className='flex flex-col max-w-[1240px] px-2 py-4 mx-auto justify-between sm:flex-row text-center text-white'>
+    <p className='py-4'>2023 CodeCube, LLC. All rights reserved</p>
+    <div className='flex justify-between sm:w-[300px] pt-4 text-2xl'>
+        <FaFacebook />
+        <FaInstagram />
+        <FaTwitter />
+        <FaTwitch />
+        <FaGithub />
     </div>
-    <div>
-        <h6 className='font-medium text-gray-400'>Company</h6>
-        <ul>
-            <li className='py-2 text-sm'>About</li>
-            <li className='py-2 text-sm'>Blog</li>
-            <li className='py-2 text-sm'>Jobs</li>
-            <li className='py-2 text-sm'>Press</li>
-            <li className='py-2 text-sm'>Careers</li>
-        </ul>
     </div>
-    <div>
-        <h6 className='font-medium text-gray-400'>Legal</h6>
-        <ul>
-            <li className='py-2 text-sm'>Claim</li>
-            <li className='py-2 text-sm'>Policy</li>
-            <li className='py-2 text-sm'>Terms</li>
-        </ul>
-    </div>
-      </div>
-    </div>
-  );
-};
+</div>
+);
 
 export default Footer;

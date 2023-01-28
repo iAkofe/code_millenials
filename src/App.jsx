@@ -20,7 +20,7 @@ const App = () => (
         <div  className="w-full bg-secondary">
         <About />
         </div>
-        <div className={`${styles.paddingX} ${styles.flexCenter} py-[60px]`}>
+        <div className={`px-40 ${styles.flexCenter} py-[40px]`}>
         <Features />
         </div>
         <Feat />

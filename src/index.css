@@ -174,3 +174,8 @@
   border-radius: 20px;
   transform: translateY(-20px) translateX(-20px); 
 }
+.socialPop:hover .socialTrigger{
+  display: initial;
+  transition: all 55s;
+  transition-delay: 55s;
+}
