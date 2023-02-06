@@ -15,7 +15,7 @@ const Team = () => (
         </h2>
       </div>
 
-      <div className='flex gap-10 w-full justify-center mt-[100px] items-center'>
+      <div className='flex gap-10 w-full justify-center mt-[100px] items-center team-mobile'>
         <div className='bg-secondary min-w-[280px] px-5 rounded-lg pb-7 relative text-white socialPop'>
           <div className='flex justify-between items-start'>
             <div>

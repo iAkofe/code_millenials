@@ -5,12 +5,12 @@ import { features, sab2 } from "../assets";
 const Feat = () => (
   <div className={`bg-[#971EB5] pr-60 flex justify-center`}>
   
-  <div className={`flex md:flex-row flex-col ${styles.paddingY} ${styles.boxWidth} `}>
+  <div className={`flex md:flex-row flex-col ${styles.paddingY} ${styles.boxWidth} feat-mobile`}>
     <div className={`flex-1 ${styles.flexCenter} flex-col xl:px-0 sm:px-16 md:my-0 my-10 ml-20 relative`}>
     <img src={features} alt="features" className="w-[574px] h-[314px] relative z-[5]" />
     </div>
 
-    <div className={` ${styles.paddingY} md:my-0 relative`}>
+    <div className={`${styles.paddingY} md:my-0 relative text-mobile`}>
     <p className={`text-white ${styles.paragraph} mb-4 inline-block bg-secondary px-3 py-2 rounded-[30px]`}>
         Our awesome features
       </p>

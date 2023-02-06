@@ -17,7 +17,7 @@ give you
           <br className="sm:block hidden" />  the very best offer!
       </h2>
     </div>
-      <div className='max-w-[1240px] mx-auto grid md:grid-cols-3 gap-8'>
+      <div className='max-w-[1240px] mx-auto grid md:grid-cols-3 gap-8 pricing-mobile'>
           <div className='w-[350px] bg-gray-100 shadow-xl flex flex-col my-4 rounded-lg hover:scale-105 duration-300'>
             <div className='w-full bg-secondary py-10 rounded-lg flex justify-start items-start '>
                 <img className='w-20 mx-10  bg-[white] rounded-md' src={approve} alt="/" />

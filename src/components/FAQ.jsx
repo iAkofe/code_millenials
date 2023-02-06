@@ -12,7 +12,7 @@ const FAQ = () => (
           <br className="sm:block hidden" />   inform you more
       </h2>
     </div>
- <div className="flex items-center gap-20 justify-center">
+ <div className="flex items-center gap-20 justify-center faq-mobile">
   <div className="bg-transparent text-white">
       <div className="container flex flex-col justify-center px-4 py-8 mx-auto md:p-8">
           <div className="space-y-4">

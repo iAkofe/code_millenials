@@ -4,7 +4,7 @@ import Button from "./Button";
 
 const Hero = () => (
   <section id="home" className={`flex md:flex-row flex-col ${styles.paddingY}`}>
-  <div className={`flex-1 ${styles.flexStart} flex-col xl:px-0 sm:px-16 px-6`}>
+  <div className={`flex-1 ${styles.flexStart} flex-col xl:px-0 sm:px-16 px-6 mobile-center`}>
     <div>
       <p className={`text-white ${styles.paragraph} mb-4 bg-secondary px-3 py-2 rounded-[30px]`}>
         Creative Saas Website

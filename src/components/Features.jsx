@@ -21,7 +21,7 @@ const FeatureCard = ({ icon, title, content, index }) => (
 );
 
 const Features = () =>  (
-  <section id="features" className={layout.section}>
+  <section id="features" className={`${layout.section} mobile-padding`}>
     <div className={layout.sectionInfo}>
     <p className={`text-white ${styles.paragraph} mb-4 bg-secondary px-3 py-2 rounded-[30px]`}>
         Our awesome features

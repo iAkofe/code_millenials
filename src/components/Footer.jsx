@@ -10,7 +10,7 @@ import {
 } from 'react-icons/fa'
 
 const Footer = () => (
-    <div className='w-full mt-24 text-white py-y px-2'>
+    <div className='w-full mt-24 text-white py-y px-2 footer-mobile'>
     <div className='max-w-[1240px] mx-auto gap-10 grid grid-cols-2 md:grid-cols-6 border-b-2 border-white py-8'>
       <di className='col-span-2 pt-8 md:pt-2'> 
       <img src={logo} alt="codecube" className="w-[129px] h-[50px]" />

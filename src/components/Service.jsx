@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from "../style";
-import { timer, documents,} from "../assets"
+import { timer, documents,} from "../assets";
 
 const Service = () => (
   <div className={`mx-auto py-16 text-white px-20`} id='service'>
@@ -13,7 +13,7 @@ const Service = () => (
           <br className="sm:block hidden" />   very best!
       </h2>
     </div>
-    <div className='flex gap-10 justify-center items-center'>
+    <div className='flex gap-10 justify-center items-center cards-mobile'>
       <div className='services'>
       <img src={documents } alt='secure' className='w-10 h-10 my-5' />
         <h3 className={`${styles.heading4} text-center` } >
@@ -45,7 +45,7 @@ const Service = () => (
       </div>
   </div>
 
-  <div className='flex gap-10 justify-center items-center pb-20'>
+  <div className='flex gap-10 justify-center items-center pb-20 cards-mobile'>
       <div className='services'>
       <img src={timer} alt='secure' className='w-10 h-10 my-5' />
         <h3 className={`${styles.heading4} text-center` } >
