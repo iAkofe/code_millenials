@@ -2,20 +2,21 @@ import React from 'react';
 import styles from '../style';
 
 const FAQ = () => (
-  <div className={`mx-auto py-20 text-white px-20 bg-[#38145E]`}>
-    <div className= {`mx-auto text-center`}>
-      <p className={`text-white ${styles.paragraph} bg-secondary inline text-center mb-4 px-3 py-2 rounded-[30px]`}>
-        Frequently Asked Questions
-      </p>
-      <h2 className={`${styles.heading3} mt-5 text-center`}>
-      We have some FAQ to
+  <section className="section-alt section reveal">
+    <div className="container-shell text-white">
+      <div className="text-center max-w-[760px] mx-auto">
+        <p className={`chip ${styles.paragraph} inline text-center mb-4`}>
+          Frequently Asked Questions
+        </p>
+        <h2 className={`${styles.heading3} mt-5 text-center`}>
+          We have some FAQ to
           <br className="sm:block hidden" />   inform you more
-      </h2>
-    </div>
- <div className="flex items-center gap-20 justify-center faq-mobile">
-  <div className="bg-transparent text-white">
-      <div className="container flex flex-col justify-center px-4 py-8 mx-auto md:p-8">
-          <div className="space-y-4">
+        </h2>
+      </div>
+      <div className="reveal-group grid-2 mt-12 faq-mobile">
+        <div className="faq-panel text-white reveal-item">
+          <div className="container flex flex-col justify-center px-4 py-8 mx-auto md:p-8">
+            <div className="space-y-4">
               <details className="w-full">
                   <summary className="px-4 py-6">
                       What is React? 
@@ -48,13 +49,13 @@ const FAQ = () => (
                   Props is the shorthand for Properties in React.
                   </p>
               </details>
+            </div>
           </div>
-      </div>
-  </div>
+        </div>
 
-  <div className=" text-white">
-      <div className="container flex flex-col justify-center px-4 py-8 mx-auto md:p-8">
-          <div className="space-y-4">
+        <div className="faq-panel text-white reveal-item">
+          <div className="container flex flex-col justify-center px-4 py-8 mx-auto md:p-8">
+            <div className="space-y-4">
               <details className="w-full">
                   <summary className="px-4 py-6">
                       What is React? 
@@ -87,12 +88,12 @@ const FAQ = () => (
                   Props is the shorthand for Properties in React.
                   </p>
               </details>
+            </div>
           </div>
+        </div>
       </div>
-  </div>
-</div>
-  </div>
- 
+    </div>
+  </section>
 );
 
 export default FAQ;

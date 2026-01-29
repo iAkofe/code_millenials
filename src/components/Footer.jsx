@@ -10,14 +10,14 @@ import {
 } from 'react-icons/fa'
 
 const Footer = () => (
-    <div className='w-full mt-24 text-white py-y px-2 footer-mobile'>
-    <div className='max-w-[1240px] mx-auto gap-10 grid grid-cols-2 md:grid-cols-6 border-b-2 border-white py-8'>
-      <di className='col-span-2 pt-8 md:pt-2'> 
-      <img src={logo} alt="codecube" className="w-[129px] h-[50px]" />
+    <footer className='section-tight w-full text-white py-y px-2 footer-mobile reveal'>
+    <div className='container-shell gap-10 grid grid-cols-2 md:grid-cols-6 border-b-2 footer-line py-8'>
+      <div className='col-span-2 pt-8 md:pt-2'> 
+      <img src={logo} alt="codecube" className="logo-mark w-[129px] h-[50px]" />
       <p className='font-[14px] text-white mt-3 text-left'>
         Code cube has you covered for all your web design and development jobs. We take you from ideation to creation. You can trust in us!
         </p>
-      </di>
+      </div>
         <div>
             <h6 className='font-bold uppercase pt-2'>Services</h6>
             <ul>
@@ -42,13 +42,13 @@ const Footer = () => (
             <p className='font-bold uppercase'>Subscribe to our newsletter</p>
             <p className='py-4'>The latest news, articles, and resources, sent to your inbox weekly.</p>
             <form className='flex flex-col sm:flex-row'>
-                <input className='w-full p-2 mb-4' type="email" placeholder='Enter email..'/>
+                <input className='input-field w-full p-2 mb-4' type="email" placeholder='Enter email..'/>
                 <button className='text-white px-4 py-2 mb-4 bg-secondary'><img className='h-5 w-5' src={send} alt='send'/></button>
             </form>
         </div>
     </div>
 
-    <div className='flex flex-col max-w-[1240px] px-2 py-4 mx-auto justify-between sm:flex-row text-center text-white'>
+    <div className='flex flex-col container-shell px-2 py-4 mx-auto justify-between sm:flex-row text-center text-white'>
     <p className='py-4'>2023 CodeCube, LLC. All rights reserved</p>
     <div className='flex justify-between sm:w-[300px] pt-4 text-2xl'>
         <FaFacebook />
@@ -58,7 +58,7 @@ const Footer = () => (
         <FaGithub />
     </div>
     </div>
-</div>
+</footer>
 );
 
 export default Footer;
